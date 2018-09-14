@@ -1,0 +1,1 @@
+This time, we are going to learn how to write programs that recognize objects in images using deep learning. In other words, we are going to explain the black magic that allows Google Photos to search your photos based on what is in the picture
