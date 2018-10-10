@@ -17,7 +17,7 @@ print("The Accuarcy for Naive Bayes on test set is: {:.2f}" .format(gauss.score(
 
 
 
-svm = SVC(kernel="linear")
+svm = SVC(kernel='linear')
 svm.fit(x_train, y_train)
 print('Accuracy of SVM (linear) classifier on training set: {:.2f}'.format(svm.score(x_train, y_train)))
 print('Accuracy of SVM (linear) classifier on test set: {:.2f}'.format(svm.score(x_test, y_test)))
