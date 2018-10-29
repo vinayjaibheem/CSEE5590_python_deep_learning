@@ -69,7 +69,7 @@ def basic_model_1(x_size, y_size):
 model = basic_model_1(arr_x_train.shape[1], 1)
 model.summary()
 epochs = 50
-batch_size =128
+batch_size =50
 history = model.fit(arr_x_train, arr_y_train,
     batch_size=batch_size,
     epochs=epochs,

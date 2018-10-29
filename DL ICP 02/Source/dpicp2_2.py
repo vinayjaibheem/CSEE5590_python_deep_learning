@@ -9,7 +9,7 @@ from keras import regularizers
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Activation
 from keras.layers import Conv2D, MaxPooling2D
-from keras.optimizers import Adam, RMSprop
+from keras.optimizers import *
 from keras.callbacks import TensorBoard, EarlyStopping, ModelCheckpoint
 from keras.utils import plot_model
 from keras.models import load_model
@@ -62,14 +62,14 @@ def basic_model_1(x_size, y_size):
     t_model.add(Dense(y_size))
     print(t_model.summary())
     t_model.compile(loss='mean_squared_error',
-        optimizer=Adam(),
+        optimizer= Adagrad(),
         metrics=[metrics.mae])
     return(t_model)
 
 model = basic_model_1(arr_x_train.shape[1], 1)
 model.summary()
-epochs = 50
-batch_size =128
+epochs = 100
+batch_size =50
 history = model.fit(arr_x_train, arr_y_train,
     batch_size=batch_size,
     epochs=epochs,
