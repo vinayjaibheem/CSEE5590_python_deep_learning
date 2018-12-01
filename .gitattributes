@@ -1,3 +1,4 @@
 **LAB3/ filter=lfs diff=lfs merge=lfs -text
 LAB3/** filter=lfs diff=lfs merge=lfs -text
 DL_ICP5/** filter=lfs diff=lfs merge=lfs -text
+DL_ICP6/** filter=lfs diff=lfs merge=lfs -text
